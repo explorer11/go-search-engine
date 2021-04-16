@@ -1,22 +1,22 @@
-#### Basic text search engine in files 
+### Basic text search engine in files 
 Written in Go.  
 Given a directory, the search engine builds an index in memory.  
 It looks for the words of a query in the content and in the title of the files in this folder and in all sub folders.  
 The score of a file is the ratio of the words which are found in it : 1 if a file contains all the words, 0.5 if a file contains one in two words etc  
 All files containing at least one word in a query are returned, with no order.
 
-#### How to test  
+### How to test  
 ```
 cd searchengine  
 go test  
 ```
 
-#### How to install 
+### How to install 
 ```
 go install searchengine  
 ```
 
-#### How to run
+### How to run
 ```
 searchengine -d=myfolder -m=http
 ```
